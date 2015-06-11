@@ -1,4 +1,4 @@
-# Code-School--AJAX
+AJAX Callbacks
 
 These files demonstrate (in its most basic form) how one can use AJAX to dynamically pull live information from an API – in this case, Last.FM! Useful when you’re working with interactive social media apps/installations ;)
 
