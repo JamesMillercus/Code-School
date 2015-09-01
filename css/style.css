@@ -1,0 +1,63 @@
+#logOUT
+{
+
+	display: none;
+	width:251px;
+	height:72px;
+	background-image:url(../assets/logOut.jpg);
+	cursor:pointer;
+}
+
+#logIN
+{
+	width:251px;
+	height:72px;
+	background-image:url(../assets/logIn.jpg);
+	display: block;
+	cursor:pointer;
+
+}
+
+#display
+{
+
+	display: block;
+	width:100%;
+	height: 500px
+
+}
+
+.smallImage
+{
+
+	width:150px;
+	height: auto;
+
+}
+
+
+#displayContent
+{
+
+	width: 640px;
+
+}
+
+#show
+{
+
+    width: 340px;
+    float: right;
+    margin-top: 0px;
+    padding: 0px;
+    list-style-type: none;
+
+}
+
+#personalInfoHolder
+{
+
+	width:300px;
+	float: left;	
+
+}

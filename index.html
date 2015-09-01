@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Facebook Login JavaScript Example</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src = "js/frmwrk.facebook.3.js"></script>
+
+		<script src = "js/javascript.js"> </script>
+
+
+		<!--
+		  Below we include the Login Button social plugin. This button uses
+		  the JavaScript SDK to present a graphical Login button that triggers
+		  the FB.login() function when clicked.
+		-->
+
+		<!-- My code <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+		</fb:login-button> -->
+
+		<!-- Alex's code --> 
+		<!-- <fb:login-button scope="public_profile,email" id = "logIN"  onlogin="FACEBOOK.login(test);">
+		</fb:login-button> 
+
+		<fb:login-button scope="public_profile,email" id = "logOUT" onlogin="FACEBOOK.revoke();">
+		</fb:login-button>  -->
+
+		<a onclick ="FACEBOOK.login(test);" id = "logIN"></a>
+
+		<a onclick ="logOut();" id = "logOUT"></a>
+
+
+		<div id="status"></div>
+		<div id="fb-root"></div>
+		<div id="displayContent">
+			<div id ="profilePhotoHolder"></div>
+			<div id ="coverPhotosHolder"></div>	
+			<div id ="personalInfoHolder"></div>
+			<div id ="likesHolder"></div>
+			<ul id="show">
+
+			</ul>
+		</div>
+
+
+	</body>
+</html>
