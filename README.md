@@ -1,6 +1,6 @@
-# Code-School
+# Facebook API
 
-These files demonstrate how one can use Facebook.api and AJAX to dynamically pull live information from an Last.FM's API.
+These files demonstrate how one can use Facebook's API and AJAX to dynamically pull live information from an Last.FM's API.
 
 What this does:
 
