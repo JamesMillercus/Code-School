@@ -1,0 +1,32 @@
+{
+  "name": "sms-contact-center",
+  "version": "0.0.1",
+  "description": "SMS Contact Center powered by Data McFly, Twilio and Node.js",
+  "main": "app.js",
+  "repository": "https://github.com/DataMcFly/sms-contact",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twilio",
+    "data mcfly",
+    "sms"
+  ],
+  "author": "Roger Stringer",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.4.2",
+    "datamcfly": "~1.4.4",
+    "ejs": "~0.8.5",
+    "express": "~3.4.8",
+    "less-middleware": "~0.2.1-beta",
+    "method-override": "~2.0.2",
+    "moment": "~2.5.1",
+    "node-buzz": "~1.1.0",
+    "socket.io": "^1.3.7",
+    "twilio": "~1.6.0"
+  },
+  "engines": {
+    "node": "0.10.26"
+  }
+}
