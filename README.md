@@ -12,6 +12,6 @@ It is then processed in Data Mcfly and forwarded onto the front end via an AJAX 
 
 How to get it to work:
 
-Follow this tutorial, it will be easier to follow along ;)
+I HAVE NOT INCLUDED ANY FILES FROM "node_modules" in this repository, follow this tutorial, to get all dependancies installed correctly:
 
 http://blog.flybase.io/2015/01/29/sms-contact-twilio/
