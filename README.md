@@ -8,7 +8,7 @@ This project demonstrates a text being sent from my mobile, to a sample number t
 
 Once the text has been received by the sample number, it then forwards that data onto the NodeJS back end of my website.
 
-It is then processed in Data Mcfly and forwarded onto the front end via an AJAX call, which is then spoken by ResponsiveVoiceJS
+It is then processed in Data Mcfly and forwarded onto the front end via two way data binding, which is then spoken by ResponsiveVoiceJS
 
 How to get it to work:
 
