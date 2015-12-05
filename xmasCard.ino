@@ -1,4 +1,6 @@
 
+
+//#include <Keyboard.h>
 #include "Keyboard.h"
 #include <CapacitiveSensor.h>
 
@@ -85,7 +87,12 @@ void loop()
           Keyboard.release(KEY_LEFT_ARROW);
           Keyboard.release(KEY_UP_ARROW);
         }
-
+//        else if (total2 > 70)
+//        {
+//          Keyboard.press(KEY_UP_ARROW);
+//          Keyboard.release(KEY_RIGHT_ARROW);
+//          Keyboard.release(KEY_LEFT_ARROW);
+//        }
       }
       
       else if (total3 <100)
@@ -101,7 +108,12 @@ void loop()
           Keyboard.release(KEY_RIGHT_ARROW);
           Keyboard.release(KEY_UP_ARROW);
         }
-
+//        else if (total3 > 70)
+//        {
+//         Keyboard.press(KEY_UP_ARROW);
+//         Keyboard.release(KEY_LEFT_ARROW);
+//         Keyboard.release(KEY_RIGHT_ARROW);
+//        }
       }
       else if(total2 < 70)
       {
@@ -125,104 +137,110 @@ void openWebsiteMac()
    delay(1000);
    Keyboard.press(177); Keyboard.releaseAll();
    
-   Keyboard.press(KEY_LEFT_GUI); //left gui
+   Keyboard.press(131); //left gui
    Keyboard.press(' '); //space
-   Keyboard.release(KEY_LEFT_GUI); //left gui
+   Keyboard.release(131); //left gui
    Keyboard.release(' '); //space
    delay(1000);  
    
     ////fail safe if Windows user opens mac option (lock screen)
-   Keyboard.press(KEY_LEFT_GUI); //left gui
+   Keyboard.press(131); //left gui
    Keyboard.press('l');
    Keyboard.releaseAll(); //left gui
-   delay(1000);
+   delay(2000);
+
+       ////fail safe if Windows user opens mac option (lock screen)
+   Keyboard.press(131); //left gui
+   Keyboard.press('l');
+   Keyboard.releaseAll(); //left gui
+   delay(5000);
    
    //escape twice to be safe
 //   Keyboard.press(58); Keyboard.releaseAll();
 //   Keyboard.press(58); Keyboard.releaseAll();
    
    ////open OSX search bar
-//   Keyboard.press(KEY_LEFT_GUI); //left gui
+//   Keyboard.press(131); //left gui
 //   Keyboard.press(' '); //space
-//   Keyboard.release(KEY_LEFT_GUI); //left gui
+//   Keyboard.release(131); //left gui
 //   Keyboard.release(' '); //space
 //   delay(500); 
 //   
    // //open terminal
    Keyboard.print("Terminal.app");
-   delay(2000);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   delay(3000);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(1000);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(1000);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(2000);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    Keyboard.println("clear");
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(2000);
    Keyboard.println("foo(){");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("cat << EOF");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("");                                    
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);                         
+   Keyboard.press(176); Keyboard.release(176);                         
    Keyboard.println("hh   hh   aaa    ccccc  kk  kk yy   yy");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("hh   hh  aaaaa  cc    c kk kk  yy   yy");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("hhhhhhh aa   aa cc      kkkk    yyyyy");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("hh   hh aaaaaaa cc    c kk kk    yyy");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("hh   hh aa   aa  ccccc  kk  kk   yyy");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println(" ");
    Keyboard.println(" ");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("xx    xx mm    mm   aaa    sssss");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println(" xx  xx  mmm  mmm  aaaaa  ss");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("  xxxx   mm mm mm aa   aa  sssss");                                                              
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println(" xx  xx  mm    mm aaaaaaa      ss");                                                              
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("xx    xx mm    mm aa   aa  sssss");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println(" ");
    Keyboard.println(" ");            
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);                                               
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.println("ttttttt  ooooo  mm    mm");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.println("  ttt   oo   oo mmm  mmm");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.println("  ttt   oo   oo mm mm mm");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.println("  ttt   oo   oo mm    mm");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.println("  ttt    oooo0  mm    mm");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);                                               
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.println("nn   nn   aaa   vv     vv iiiii ddddd");
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.println("nnn  nn  aaaaa  vv     vv  iii  dd  dd");
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.println("nn n nn aa   aa  vv   vv   iii  dd   dd");
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.println("nn  nnn aaaaaaa   vv vv    iii  dd   dd");
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.println("nn   nn aa   aa    vvv    iiiii dddddd");
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("EOF");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.println("}");
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    delay(500);
    //talk to users
-   Keyboard.println("say Hacky Xmas Tom, with love from the team at Kerve.; open http://www.hackyxmas.com/controller/a3gjj65t4a; clear; killall Terminal");   
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.println("say Hacky Christmas Navid, with love from the team at Kerve.; open http://www.hackyxmas.com/controller/dcle2cm72f; clear; killall Terminal");   
+   Keyboard.press(176); Keyboard.release(176);
    delay(500);
    //open site
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(10000);
 
    startUpMac = false;
@@ -232,6 +250,8 @@ void openWebsiteMac()
 
 void openWebsitePc()
 {  
+
+  
    Keyboard.releaseAll();
    Keyboard.releaseAll();
  
@@ -249,30 +269,30 @@ void openWebsitePc()
    Keyboard.releaseAll();
    Keyboard.releaseAll();
 //   ////fail safe if mac user opens windows option
-   Keyboard.press(KEY_LEFT_GUI); //left gui
+   Keyboard.press(131); //left gui
    Keyboard.press(' '); //space
-   Keyboard.release(KEY_LEFT_GUI); //left gui
+   Keyboard.release(131); //left gui
    Keyboard.release(' '); //space
 
    delay(1000); 
 
    Keyboard.print("TextEdit.app");
    delay(1000); 
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(500);
-   Keyboard.press(KEY_LEFT_GUI); //left gui
+   Keyboard.press(131); //left gui
    Keyboard.press('n'); //left gui
    delay(500);
-   Keyboard.release(KEY_LEFT_GUI); //left gui
+   Keyboard.release(131); //left gui
    Keyboard.release('n'); //left gui
    delay(500);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(2000);
    
    //escape twice to be safe
@@ -280,23 +300,48 @@ void openWebsitePc()
    Keyboard.press(177); Keyboard.releaseAll();
    delay(500);
    //open windows search bar
-   Keyboard.press(KEY_LEFT_GUI); //left gui
-   Keyboard.release(KEY_LEFT_GUI); //left gui
-   delay(3000);
+   Keyboard.press(131); //left gui
+   Keyboard.release(131); //left gui
+   delay(5000);
     
        // //open terminal
    Keyboard.print("Command Prompt");
-   delay(1500);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   delay(3000);
+   Keyboard.press(176);
+   Keyboard.release(176);
   
    delay(1500);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(1500);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
-   delay(2500);  
+   Keyboard.press(176);
+   Keyboard.release(176);
+   delay(5000);  
+
+   delay(500);
+   Keyboard.press(177); Keyboard.releaseAll();
+   delay(1000);
+   Keyboard.press(177); Keyboard.releaseAll();
+   delay(5000);
+   
+    //open windows search bar
+   Keyboard.press(131); //left gui
+   Keyboard.release(131); //left gui
+   delay(5000);
+    
+       // //open terminal a second time to be safe
+   Keyboard.print("Command Prompt");
+   delay(1500);
+   Keyboard.press(176);
+   Keyboard.release(176);
+  
+   delay(1500);
+   Keyboard.press(176);
+   Keyboard.release(176);
+   delay(1500);
+   Keyboard.press(176);
+   Keyboard.release(176);
+   delay(7000);  
    
 
    //:
@@ -311,7 +356,7 @@ void openWebsitePc()
 
    Keyboard.println("hh   hh   aaa    ccccc  kk  kk yy   yy");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    Keyboard.press(129); Keyboard.press(58); Keyboard.release(58); 
 
    //:
@@ -323,7 +368,7 @@ void openWebsitePc()
    
    Keyboard.println("hh   hh  aaaaa  cc    c kk kk  yy   yy");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    
    Keyboard.press(129); Keyboard.press(58); Keyboard.release(58); 
 
@@ -336,7 +381,7 @@ void openWebsitePc()
    
    Keyboard.println("hhhhhhh aa   aa cc      kkkk    yyyyy");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -344,7 +389,7 @@ void openWebsitePc()
    
    Keyboard.println("hh   hh aaaaaaa cc    c kk kk    yyy");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
 
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -352,7 +397,7 @@ void openWebsitePc()
    
    Keyboard.println("hh   hh aa   aa  ccccc  kk  kk   yyy");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
 
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -360,7 +405,7 @@ void openWebsitePc()
 
    Keyboard.println("xx    xx mm    mm   aaa    sssss");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -368,7 +413,7 @@ void openWebsitePc()
 
    Keyboard.println(" xx  xx  mmm  mmm  aaaaa  ss");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
  
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -376,7 +421,7 @@ void openWebsitePc()
 
    Keyboard.println("  xxxx   mm mm mm aa   aa  sssss");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
  
  
     Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -385,7 +430,7 @@ void openWebsitePc()
 
    Keyboard.println(" xx  xx  mm    mm aaaaaaa      ss");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
  
  
     Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
@@ -394,48 +439,48 @@ void openWebsitePc()
 
    Keyboard.println("xx    xx mm    mm aa   aa  sssss");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
  
     Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
 
-   Keyboard.println("ttttttt  ooooo  mm    mm");
+   Keyboard.println("nn   nn   aaa   vv     vv iiiii ddddd");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    
        Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
 
-   Keyboard.println("  ttt   oo   oo mmm  mmm");
+   Keyboard.println("nnn  nn  aaaaa  vv     vv  iii  dd  dd");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
    
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
 
-   Keyboard.println("  ttt   oo   oo mm mm mm");
+   Keyboard.println("nn n nn aa   aa  vv   vv   iii  dd   dd");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
 
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
 
-   Keyboard.println("  ttt   oo   oo mm    mm");
+   Keyboard.println("nn  nnn aaaaaaa   vv vv    iii  dd   dd");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
 
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
 
-   Keyboard.println("  ttt    oooo0  mm    mm");
+   Keyboard.println("nn   nn aa   aa    vvv    iiiii dddddd");
    delay(500); 
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN); Keyboard.release(KEY_RETURN);
+   Keyboard.press(176); Keyboard.release(176);
+   Keyboard.press(176); Keyboard.release(176);
    delay(4000);
    Keyboard.releaseAll();
    //open site
@@ -444,17 +489,17 @@ void openWebsitePc()
 
    Keyboard.press(129); Keyboard.press(58); Keyboard.releaseAll();
    delay(500);
-   Keyboard.print("//www.hackyxmas.com/controller/a3gjj65t4a");
+   Keyboard.print("//www.hackyxmas.com/controller/dcle2cm72f");
    Keyboard.press(129); Keyboard.press(55); Keyboard.releaseAll();
    delay(1000);
    Keyboard.press(129); Keyboard.press(55); Keyboard.releaseAll();
    delay(1000);
    Keyboard.println(" exit");
    delay(500);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
-   Keyboard.press(KEY_RETURN);
-   Keyboard.release(KEY_RETURN);
+   Keyboard.press(176);
+   Keyboard.release(176);
+   Keyboard.press(176);
+   Keyboard.release(176);
    delay(1500);
    
    //message to mac user who accidentally pressed windows:
